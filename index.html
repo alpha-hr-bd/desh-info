@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desh Info — Bangladesh News & Daily E-Paper</title>
+    <meta name="description" content="Desh Info brings selected Bangladesh newspapers and official daily e-paper links together in one convenient place.">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Desh Info — Bangladesh News & Daily E-Paper">
+    <meta property="og:description" content="Official daily e-papers of leading Bangladeshi newspapers in one clean hub.">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts: Inter & Noto Serif Bengali -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="#" class="brand-logo">
+                <span class="logo-icon">📰</span>
+                <span class="logo-text">Desh Info <small>🇧🇩</small></span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#epapers" class="nav-link">E-Paper</a>
+                <a href="#newspapers" class="nav-link">Newspapers</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="status-badge-wrapper">
+                    <span class="status-dot"></span>
+                    <span id="autoUpdateStatus">Auto Updated</span>
+                    <span class="status-divider">•</span>
+                    <span id="currentDateDisplay">Loading date...</span>
+                </div>
+                
+                <h1 class="hero-title">আজকের বাংলাদেশের পত্রিকা</h1>
+                <p class="hero-subtitle">Today's Bangladesh Newspapers</p>
+                <p class="hero-desc">বাংলাদেশের নির্বাচিত দৈনিক পত্রিকার অফিসিয়াল e-paper এক জায়গায়।</p>
+                
+                <div class="last-update-info">
+                    Last updated: <strong id="lastUpdatedTime">-</strong>
+                </div>
+
+                <!-- Live Search Box -->
+                <div class="search-box-wrapper">
+                    <div class="search-input-container">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        <input type="text" id="newspaperSearch" placeholder="পত্রিকার নাম খুঁজুন… (Search by name)" aria-label="Search newspapers">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- E-Paper Section -->
+        <section id="epapers" class="epapers-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2>আজকের E-Paper 📰</h2>
+                    <p>Click below to read today's editions directly from official publisher sources.</p>
+                </div>
+
+                <!-- Error State Container -->
+                <div id="errorContainer" class="error-container hidden">
+                    <p>E-paper data is temporarily unavailable. Please try again.</p>
+                    <button id="retryBtn" class="btn btn-primary">Refresh</button>
+                </div>
+
+                <!-- Loading State -->
+                <div id="loadingContainer" class="loading-container">
+                    <div class="spinner"></div>
+                    <p>Loading newspapers...</p>
+                </div>
+
+                <!-- Newspapers Grid -->
+                <div id="papersGrid" class="papers-grid"></div>
+
+                <!-- No Results State -->
+                <div id="noResults" class="no-results hidden">
+                    <p>কোনো পত্রিকা পাওয়া যায়নি। (No newspapers found matching your search.)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="section-container about-card">
+                <h2>About Desh Info</h2>
+                <p>Desh Info is a Bangladesh-focused digital information platform that brings selected official newspaper and e-paper sources together in one convenient place. Built with modern web standards and automated daily synchronization, it ensures reliable access to trusted news hubs.</p>
+                <div class="founder-badge">
+                    <span>Founder:</span>
+                    <strong>Mohammad Alpha Hayat Rat</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-container">
+                <h2>Contact & Feedback</h2>
+                <p>Have suggestions or want to add a verified newspaper source? Reach out to our team.</p>
+                <div class="contact-card">
+                    <p>Email: <a href="mailto:contact@deshinfo.local">contact@deshinfo.local</a></p>
+                    <p>Platform: GitHub Pages & Actions Automation</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="brand-logo footer-logo">
+                    <span class="logo-icon">📰</span>
+                    <span class="logo-text">Desh Info 🇧🇩</span>
+                </div>
+                <p class="footer-tagline">Bangladesh News & Daily E-Paper Hub</p>
+                <p class="founder-credit">Founded by Mohammad Alpha Hayat Rat</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#epapers">E-Paper</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Disclaimer</h4>
+                <p class="disclaimer-text">Newspaper content belongs to its respective publishers. Desh Info links to official sources.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Desh Info — All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
