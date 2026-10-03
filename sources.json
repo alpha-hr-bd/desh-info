@@ -1,0 +1,36 @@
+{
+  "sources": [
+    {
+      "name": "প্রথম আলো",
+      "nameEn": "Prothom Alo",
+      "type": "static_url",
+      "description": "Official e-paper",
+      "url": "https://epaper.prothomalo.com/",
+      "official": "https://www.prothomalo.com/"
+    },
+    {
+      "name": "ইত্তেফাক",
+      "nameEn": "Ittefaq",
+      "type": "static_url",
+      "description": "Official e-paper",
+      "url": "https://epaper.ittefaq.com.bd/epaper",
+      "official": "https://www.ittefaq.com.bd/"
+    },
+    {
+      "name": "যুগান্তর",
+      "nameEn": "Jugantor",
+      "type": "static_url",
+      "description": "Official e-paper",
+      "url": "https://epaper.jugantor.com/",
+      "official": "https://www.jugantor.com/"
+    },
+    {
+      "name": "দেশ রূপান্তর",
+      "nameEn": "Desh Rupantor",
+      "type": "static_url",
+      "description": "Official e-paper",
+      "url": "https://epaper.deshrupantor.com/",
+      "official": "https://www.deshrupantor.com/"
+    }
+  ]
+}
