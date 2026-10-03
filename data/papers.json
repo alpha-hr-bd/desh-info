@@ -1,0 +1,33 @@
+{
+  "updatedAt": "2026-10-03 08:30 UTC",
+  "papers": [
+    {
+      "name": "প্রথম আলো",
+      "nameEn": "Prothom Alo",
+      "description": "Official e-paper",
+      "url": "https://epaper.prothomalo.com/",
+      "official": "https://www.prothomalo.com/"
+    },
+    {
+      "name": "ইত্তেফাক",
+      "nameEn": "Ittefaq",
+      "description": "Official e-paper",
+      "url": "https://epaper.ittefaq.com.bd/epaper",
+      "official": "https://www.ittefaq.com.bd/"
+    },
+    {
+      "name": "যুগান্তর",
+      "nameEn": "Jugantor",
+      "description": "Official e-paper",
+      "url": "https://epaper.jugantor.com/",
+      "official": "https://www.jugantor.com/"
+    },
+    {
+      "name": "দেশ রূপান্তর",
+      "nameEn": "Desh Rupantor",
+      "description": "Official e-paper",
+      "url": "https://epaper.deshrupantor.com/",
+      "official": "https://www.deshrupantor.com/"
+    }
+  ]
+}
